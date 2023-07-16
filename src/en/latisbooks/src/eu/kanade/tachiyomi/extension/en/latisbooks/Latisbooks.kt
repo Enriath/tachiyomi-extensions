@@ -121,7 +121,7 @@ class Latisbooks : HttpSource() {
         val blocks = response.asJsoup().select("div.content-wrapper div.row div.col")
 
         // Handle multiple images per page (e.g. Page 23+24)
-        val pages = blocks.select("img.thumb-image")
+        val pages = blocks.select("div.image-block-wrapper img")
             .mapIndexed { i, it -> Page(i, "", it.attr("abs:data-src")) }
             .toMutableList()
 
