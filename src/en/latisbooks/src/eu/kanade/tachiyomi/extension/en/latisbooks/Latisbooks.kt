@@ -37,7 +37,7 @@ class Latisbooks : HttpSource() {
             initialized = true
             title = "Bodysuit 23"
             url = "/archive/"
-            thumbnail_url = response.asJsoup().select("img.thumb-image").firstOrNull()?.attr("abs:data-src")
+            thumbnail_url = "https://images.squarespace-cdn.com/content/v1/56595108e4b01110e1cf8735/1511856223610-NSB8O5OJ1F6KPQL0ZGBH/image-asset.jpeg"
         }
     }
 
